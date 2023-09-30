@@ -10,9 +10,12 @@ order: 4
 ### 포스팅 예정 목록
 * AI/ML Engineer
     * Python
-        * 파이썬과 함께하는 인공지능 수학
+    * NumPy
+        * NumPy로 공부하는 인공지능 기초 수학
+        * NumPy로 공부하는 인공지능 미분
+        * NumPy로 공부하는 인공지능 선형대수
+        * NumPy로 공부하는 인공지능 확률과 통계
 * Data Engineer
     * Kafka
-    * Hadoop
 * Algorithm
     * Data Structures
