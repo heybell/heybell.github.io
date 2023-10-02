@@ -1,6 +1,6 @@
 ---
 title: 데이터 전처리 기술 다루기 (1)
-date: 2023-09-30 15:04:00 +09:00
+date: 2023-10-02 18:32:00 +09:00
 categories: [Data Engineer, Data Preprocessing]
 tags: [Data Enginner, Python, Pandas, NumPy, Data Preprocessing]
 math: true
