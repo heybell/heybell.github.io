@@ -17,7 +17,7 @@ Apache Spark는 대규모 데이터 처리와 분석에 효과적인 오픈 소�
 - Python : 3.7.17
 - Spark : 2.4.8
 
-> Spark 2.x 버전은 Python 3.7 버전까지만 지원한다.
+> Spark 2.x 버전은 Python 3.7 버전까지 지원한다.
 {: .prompt-tip }
 
 ## **Java JDK 설치**
