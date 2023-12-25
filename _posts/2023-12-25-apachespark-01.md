@@ -14,7 +14,11 @@ Apache Spark는 대규모 데이터 처리와 분석에 효과적인 오픈 소�
 - 운영체제 : Ubuntu 22.04
 - JDK : 1.8
 - Scala : 2.11.12
-- Python : 3.10.12
+- Python : 3.7.17
+- Spark : 2.4.8
+
+> Spark 2.x 버전은 Python 3.7 버전까지만 지원한다.
+{: .prompt-tip }
 
 ## **Java JDK 설치**
 각 가상머신, master 및 worker에서 다음 명령어들을 따르고 Java JDK를 설치한다.
@@ -31,6 +35,20 @@ sudo apt-get install openjdk-8-jdk
 
 ```shell
 sudo apt-get install scala
+```
+
+## **Python 3.7 버전으로 변경**
+각 가상머신, master 및 worker에서 다음 명령어들을 따르고 Python 3.7 버전으로 변경한다.
+
+```shell
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-cache policy python3.7
+sudo apt install python3.7
+ls /usr/bin/python*
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+sudo update-alternatives --config python
+python -V
 ```
 
 ## **호스트 이름 변경**
@@ -160,8 +178,9 @@ sudo vim spark-env.sh
 ```shell
 # 맨 아래에 추가
 export SPARK_MASTER_HOST='10.0.0.210'
+export SPARK_LOCAL_IP='10.0.0.210'
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PYSPARK_PYTHON=python3
+export PYSPARK_PYTHON=/usr/bin/python3.7
 ```
 
 - worker 추가
